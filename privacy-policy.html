@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for TakaLog Money Tracker by Masud Labs.">
+  <meta name="theme-color" content="#101b35">
+  <title>TakaLog Money Tracker — Privacy Policy | Masud Labs</title>
+  <style>
+    :root{--navy:#101b35;--blue:#3978f6;--ink:#17233b;--muted:#64718a;--line:#e4eaf3;--bg:#f4f7fc}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+    header{background:var(--navy);color:#fff;padding:34px 20px}.wrap{width:min(850px,calc(100% - 32px));margin:auto}
+    .brand{font-weight:800;letter-spacing:.12em;color:#a9caff;font-size:13px}.app{font-size:clamp(30px,5vw,42px);line-height:1.15;margin:14px 0 4px}
+    header p{color:#d1dced;margin:0}.sheet{background:#fff;margin:26px auto;padding:clamp(22px,5vw,44px);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 30px #17233b0a}
+    .updated{font-size:13px;color:var(--muted);margin-top:0}.notice{background:#eff5ff;border-left:4px solid var(--blue);padding:14px 16px;border-radius:8px;margin:22px 0}
+    h2{font-size:21px;line-height:1.3;margin:30px 0 8px}p{margin:8px 0 14px}ul{padding-left:22px}li{margin:6px 0}
+    a{color:#245fc7;overflow-wrap:anywhere}.muted{color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:13px;padding:4px 16px 30px}
+    @media(max-width:560px){header{padding:28px 16px}.sheet{margin:16px auto}.app{font-size:32px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">MASUD LABS</div>
+    <h1 class="app">TakaLog Money Tracker</h1>
+    <p>Privacy Policy</p>
+  </div>
+</header>
+<main class="wrap">
+  <article class="sheet">
+    <p class="updated"><strong>Effective date:</strong> November 21, 2026</p>
+    <p>This Privacy Policy explains how TakaLog Money Tracker ("TakaLog", "the app", "we", or "our"), developed by Masud Labs, handles information when you use the app.</p>
+
+    <div class="notice">
+      <strong>In brief:</strong> TakaLog stores your financial records primarily in a local SQLite database on your device. If you choose to use cloud backup, the app uses Google Sign-In and Firebase services. The inspected app build encrypts backup data with AES-256-GCM before uploading it to Firebase Cloud Firestore.
+    </div>
+
+    <h2>1. Information stored on your device</h2>
+    <p>TakaLog is a money-tracking app. Information you enter or create may include income and expense transactions, amounts, dates, notes, categories, account or balance details, loan records, and app settings such as language, currency, or preferences. This information is stored locally in the app's SQLite (Room) database on your device.</p>
+
+    <h2>2. Google Sign-In and cloud backup</h2>
+    <p>Cloud backup is optional. If you choose to connect your Google account, TakaLog uses Google Sign-In and Firebase Authentication to authenticate you for the cloud backup feature.</p>
+    <p>In the inspected app build, cloud backup data is sent to Firebase Cloud Firestore through the app's cloud-backup component. The backup archive is encrypted using AES-256-GCM before upload. The app associates cloud backup records with the authenticated account so that the appropriate backups can be listed, restored, or deleted.</p>
+    <p>The inspected backup implementation identifies Firebase Cloud Firestore as the remote backup destination. Although Google Drive scope identifiers are present in the APK, the inspected cloud-backup upload and retrieval implementation uses Firestore; this policy therefore does not describe Google Drive as the confirmed cloud-backup storage destination.</p>
+
+    <h2>3. Local backup and restore</h2>
+    <p>TakaLog supports an encrypted local backup file format with the <code>.tkb</code> extension. If you use the export feature, you choose where the file is saved using the Android file-selection interface. The file is stored at the location you select and may be copied or shared by you using other apps or services. Those other apps and services have their own privacy practices.</p>
+
+    <h2>4. How information is used</h2>
+    <ul>
+      <li>To provide income, expense, category, loan, and related money-tracking features.</li>
+      <li>To create, upload, list, restore, and delete cloud backups when you choose to use cloud backup.</li>
+      <li>To authenticate your Google account for the cloud backup feature.</li>
+      <li>To maintain app preferences and provide app functionality.</li>
+    </ul>
+
+    <h2>5. Service providers</h2>
+    <p>The inspected app build integrates Google Sign-In, Firebase Authentication, and Firebase Cloud Firestore for account authentication and cloud backup functionality. These services are provided by Google. Their processing of information is also subject to Google's applicable terms and privacy information:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></li>
+    </ul>
+
+    <h2>6. Advertising and analytics</h2>
+    <p>No AdMob advertising SDK or third-party analytics SDK was identified in the APK build inspected for this policy. If a future version adds advertising, analytics, or other data-processing services, this policy and the app's Google Play Data safety disclosures will be updated as applicable.</p>
+
+    <h2>7. Data sharing and sale</h2>
+    <p>Masud Labs does not sell your personal information. Information is processed by the service providers described above when needed to provide features you choose, such as Google authentication and cloud backup. You may also choose to export or share a local backup file using other apps on your device.</p>
+
+    <h2>8. Data security</h2>
+    <p>The inspected cloud-backup implementation encrypts backup archives using AES-256-GCM before uploading them. You should keep your device, Google account, and any backup recovery information secure. No method of electronic storage or transmission can be guaranteed to be completely secure.</p>
+
+    <h2>9. Data retention and deletion</h2>
+    <p>Your local app data remains on your device until you delete it from within the app, clear the app's storage, or uninstall the app (Android behavior and device backup settings may affect what remains on the device).</p>
+    <p>Cloud backup copies may remain in Firebase until you delete them using the app's available backup-management controls or request assistance from the developer. Deleting a local record does not necessarily delete an already-created cloud backup. If you need help with cloud-backup deletion, contact us at the email below and include enough information for us to identify the relevant account. Do not send your password or other authentication secrets.</p>
+    <p>Local <code>.tkb</code> files saved outside the app must be deleted separately from the location where you saved or copied them.</p>
+
+    <h2>10. Children's privacy</h2>
+    <p>TakaLog is a general-purpose money-tracking app and is not designed specifically for children. If you believe a child has provided personal information in connection with the app, contact us so we can review the request.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We may update this Privacy Policy when the app's features, services, or legal requirements change. The latest version will be published at this URL, with its updated effective date.</p>
+
+    <h2>12. Contact us</h2>
+    <p>If you have questions or requests about this Privacy Policy or your information, contact:</p>
+    <p><strong>Masud Labs</strong><br>
+    Email: <a href="mailto:masudmiah225@gmail.com">masudmiah225@gmail.com</a></p>
+  </article>
+</main>
+<footer>© 2026 Masud Labs. All rights reserved.</footer>
+</body>
+</html>
