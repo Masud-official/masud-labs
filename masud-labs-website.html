@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Masud Labs builds practical, reliable Android apps and digital tools.">
+  <meta name="theme-color" content="#101b35">
+  <title>Masud Labs — Building Useful Digital Experiences</title>
+  <style>
+    :root{--navy:#101b35;--blue:#3978f6;--ink:#17233b;--muted:#66738b;--pale:#f3f6fc;--line:#e4eaf3}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{background:rgba(16,27,53,.97);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff1c}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.08em}
+    .logo{width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,#65a5ff,#2861e8);display:grid;place-items:center;font-size:22px;font-weight:900}
+    .navlinks{display:flex;gap:26px;font-size:14px;color:#d7e2f5}.navlinks a:hover{color:#fff}
+    .hero{background:radial-gradient(ellipse at 80% 10%,#284b86 0,transparent 38%),linear-gradient(135deg,#101b35,#172d55);color:white;padding:105px 0 100px}
+    .eyebrow{color:#9fc2ff;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800}
+    h1{font-size:clamp(42px,7vw,70px);line-height:1.08;letter-spacing:-.045em;max-width:760px;margin:18px 0}
+    .hero p{font-size:18px;color:#d0dbed;max-width:650px;margin:0 0 30px}
+    .btn{display:inline-block;background:#fff;color:#17315f;padding:12px 19px;border-radius:10px;font-weight:750}.btn.secondary{background:transparent;color:white;border:1px solid #ffffff65;margin-left:10px}
+    section{padding:76px 0}.section-kicker{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h2{font-size:clamp(29px,4vw,40px);line-height:1.2;letter-spacing:-.03em;margin:10px 0 14px}.lead{color:var(--muted);max-width:720px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.card{border:1px solid var(--line);border-radius:16px;padding:24px;background:white}
+    .card-icon{width:44px;height:44px;border-radius:12px;background:#edf3ff;color:#2861e8;display:grid;place-items:center;font-size:21px;margin-bottom:17px}
+    .card h3{margin:0 0 7px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .soft{background:var(--pale)}.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+    .highlight{background:var(--navy);color:#fff;border-radius:20px;padding:30px}.highlight p{color:#d0dbed;margin-bottom:0}
+    .contact{background:#101b35;color:white}.contact .lead{color:#cbd6e8}.contact-box{margin-top:28px;padding:24px;border:1px solid #ffffff30;border-radius:16px;max-width:650px}
+    .contact-box p{margin:5px 0;color:#d0dbed}.contact-box a{color:#a9caff;text-decoration:underline}
+    footer{background:#0b1428;color:#aebbd0;padding:22px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:12px}.navlinks a:nth-child(2){display:none}.hero{padding:76px 0}.grid{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr;gap:25px}section{padding:58px 0}}
+    @media(max-width:430px){.navlinks a{font-size:11px}.navlinks{gap:9px}.brand{font-size:13px}.btn.secondary{margin:10px 0 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="logo">M</span><span>MASUD LABS</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#apps">Apps</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">Independent App Development</div>
+      <h1>Building useful apps for everyday life.</h1>
+      <p>Masud Labs creates practical Android applications and digital tools with a focus on simplicity, reliability, and a better user experience.</p>
+      <a class="btn" href="#apps">Explore our apps</a>
+      <a class="btn secondary" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-layout">
+      <div>
+        <div class="section-kicker">About Masud Labs</div>
+        <h2>Small ideas. Useful technology.</h2>
+        <p class="lead">Masud Labs is an independent developer brand focused on creating helpful mobile apps and software tools. We aim to make everyday tasks easier through thoughtful design, useful features, and continuous improvement.</p>
+      </div>
+      <div class="highlight">
+        <div class="eyebrow">Our approach</div>
+        <h3>Simple, practical, user-focused.</h3>
+        <p>We value clear interfaces, dependable functionality, responsible data practices, and ongoing improvements based on user feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="apps">
+    <div class="wrap">
+      <div class="section-kicker">What we build</div>
+      <h2>Apps and digital tools</h2>
+      <p class="lead">Our projects may include productivity tools, everyday utilities, and other helpful Android experiences.</p>
+      <div class="grid">
+        <article class="card"><div class="card-icon">▦</div><h3>Android Applications</h3><p>Mobile apps designed to be clear, useful, and straightforward to use.</p></article>
+        <article class="card"><div class="card-icon">⚙</div><h3>Utility Tools</h3><p>Practical features that help simplify common tasks and workflows.</p></article>
+        <article class="card"><div class="card-icon">✦</div><h3>Continuous Improvement</h3><p>Updates and refinements focused on stability, usability, and user feedback.</p></article>
+      </div>
+      <p style="margin-top:22px;color:#66738b;font-size:13px">App listings will be added here as they become publicly available.</p>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap">
+      <div class="section-kicker">Privacy</div>
+      <h2>Privacy and user trust</h2>
+      <p class="lead">We take privacy seriously. Each app may have its own privacy policy explaining what information it collects, how that information is used, and what choices users have. Please refer to the privacy policy linked on the relevant app's Google Play listing.</p>
+      <p style="color:#66738b;font-size:13px;margin-top:16px">This website is an introduction to the Masud Labs developer brand. It is not a substitute for an individual app's privacy policy or terms of service.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-kicker">Contact</div>
+      <h2>Let's connect.</h2>
+      <p class="lead">For app support, feedback, or business inquiries, contact the developer using the email address below.</p>
+      <div class="contact-box">
+        <strong>Masud Labs</strong>
+        <p>Email: <a href="mailto:masudmiah225@gmail.com">masudmiah225@gmail.com</a></p>
+        <p style="font-size:12px">Replace this placeholder with your public support email before publishing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year">2026</span> Masud Labs. All rights reserved.</span>
+    <span>Independent App Development</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
